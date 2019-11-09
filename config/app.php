@@ -122,6 +122,9 @@ return [
     'key' => env('APP_KEY'),
 
     'cipher' => 'AES-256-CBC',
+    'APIMEDIC_USERNAME' => env('APIMEDIC_USERNAME'),
+    'APIMEDIC_PASSWORD' => env('APIMEDIC_PASSWORD'),
+    'rapid_api_bmi_key' => env('RAPID_API_BMI_KEY'),
 
     /*
     |--------------------------------------------------------------------------
