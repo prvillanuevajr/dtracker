@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -48,7 +48,7 @@
                 font-size: 84px;
             }
 
-            .links > a {
+            p, .links > a {
                 color: #636b6f;
                 padding: 0 25px;
                 font-size: 13px;
@@ -81,19 +81,12 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    {{ config('app.name', 'Laravel') }}
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+                <p class="links">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deserunt illum similique! Deserunt ea, eos error excepturi illum quisquam saepe ut velit! Amet dolor id illo itaque maiores mollitia non quod tempore. Aliquid aperiam aut commodi corporis doloremque dolorum, ea eligendi, eum illo molestias, repellat vel. Nulla, similique, temporibus? Accusamus ad aliquam amet, debitis dolore error fuga hic inventore, ipsa iste laboriosam, maxime minima minus nam nobis odio odit officiis possimus praesentium quaerat quidem quos tenetur ut vitae voluptatum. Accusantium cum cumque delectus dignissimos dolore, eligendi enim mollitia nemo nesciunt obcaecati officiis perspiciatis placeat quia, quidem quisquam quod repellat reprehenderit similique sint soluta sunt tempore voluptas. A amet architecto aut consectetur consequuntur cupiditate dolorum esse, excepturi fugit ipsa molestias nemo provident quas qui quia quibusdam quod quos repellendus! Blanditiis deserunt dolores, illo maiores minima quos similique voluptate voluptates. Ad, alias asperiores blanditiis consequatur doloribus facere fuga inventore magnam, minus natus, nemo optio praesentium quaerat quasi reiciendis vero vitae voluptas. Aliquam atque blanditiis dolore dolorum esse libero non perspiciatis placeat provident, qui sunt tempora voluptatum. Deleniti distinctio doloribus esse est exercitationem expedita harum nemo nesciunt omnis possimus quae quam repellendus rerum, sed sunt temporibus ut. Aliquid dignissimos earum esse nobis ullam.
+                </p>
             </div>
         </div>
     </body>

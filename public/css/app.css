@@ -11100,3 +11100,33 @@ a.text-dark:focus {
   }
 }
 
+.navbar {
+  background: transparent !important;
+}
+
+.form-control {
+  border-style: none none solid none;
+  outline-style: none !important;
+  box-shadow: none !important;
+}
+
+.btn {
+  border-radius: 0px !important;
+}
+
+.card {
+  border-radius: 0px !important;
+}
+
+body {
+  background-color: transparent !important;
+}
+
+.diagnosis_card {
+  font-family: Roboto !important;
+}
+
+.diagnosis_card p {
+  font-size: 16px !important;
+}
+
