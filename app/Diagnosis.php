@@ -15,6 +15,11 @@ class Diagnosis extends Model
 
     public function owner()
     {
-        return $this->belongsTo(User::class,'user_id');
+        return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function symptoms()
+    {
+        return $this->belongsToMany(Symptom::class,'diagnoses_symptoms');
     }
 }

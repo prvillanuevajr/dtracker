@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','gender','birthday','weight','height','hip','waist'
+        'name', 'email', 'password', 'gender', 'birthday', 'weight', 'height', 'hip', 'waist'
     ];
 
     /**
@@ -38,6 +38,11 @@ class User extends Authenticatable
     ];
 
     protected $dates = [
-      'birthday'
+        'birthday'
     ];
+
+    public function diagnoses()
+    {
+        return $this->hasMany(Diagnosis::class);
+    }
 }

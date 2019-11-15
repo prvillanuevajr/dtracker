@@ -33,13 +33,14 @@ class DiagnoseController extends Controller
         $this->update_user_body_stats($request, $user);
         $age = Carbon::parse($user->birthday)->diffInYears(now());
         $bmi_stats = (new Bmi())->get_bmi($user->gender, $age, $request->weight, $request->height, $request->hip, $request->waist);
-        $diagnosis_id = $this->save_diagnosis($bmi_stats, $diagnosis, $request)->id;
-        return response(['diagnosis_id' => $diagnosis_id], 200);
+        $diagnosis = $this->save_diagnosis($bmi_stats, $diagnosis, $request);
+        $diagnosis->symptoms()->attach($symptoms);
+        return response(['diagnosis_id' => $diagnosis->id], 200);
     }
 
     public function show(Diagnosis $diagnosis)
     {
-        return view('diagnose.show',compact('diagnosis'));
+        return view('diagnose.show', compact('diagnosis'));
     }
 
     public function symptoms()
@@ -102,5 +103,10 @@ class DiagnoseController extends Controller
         $new_diagnosis_instance->user_id = Auth::user()->id;
         $new_diagnosis_instance->save();
         return $new_diagnosis_instance;
+    }
+
+    public function getAllDiagnosis()
+    {
+        return Auth::user()->diagnoses()->with('disease')->get();
     }
 }

@@ -21,6 +21,11 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('diagnose-component', require('./components/Diagnose.vue').default);
+Vue.component('my-diagnose-component', require('./components/MyDiagnoses.vue').default);
+Vue.component('analytics-1-component', require('./components/Analytics/Analytics1.vue').default);
+Vue.component('analytics-2-component', require('./components/Analytics/Analytics2.vue').default);
+Vue.component('analytics-3-component', require('./components/Analytics/Analytics3.vue').default);
+Vue.component('analytics-4-component', require('./components/Analytics/Analytics4.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

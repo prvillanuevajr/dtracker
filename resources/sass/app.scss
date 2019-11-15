@@ -9,6 +9,36 @@
   background: transparent !important;
 }
 
+.nav-item > a {
+  color: #636b6f;
+  //padding: 0 25px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.welcome-title {
+  font-size: 84px;
+}
+
+.links {
+  color: #636b6f;
+  //padding: 0 25px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.brand_head {
+  padding: 0px !important;
+  margin: 0 0 -15px 0 !important;
+  font-size: 30px !important;
+}
+
 .form-control {
   border-style: none none solid none;
   outline-style: none !important;
@@ -17,6 +47,12 @@
 
 .btn {
   border-radius: 0px !important;
+}
+
+.btn-success {
+  color: #000;
+  background-color: #92CBC5;
+  border-color: #92CBC5;
 }
 
 .card {

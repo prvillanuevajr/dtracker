@@ -23,6 +23,8 @@ try {
 window.axios = require('axios');
 window.moment = require('moment');
 window.swal = require('sweetalert2');
+require('chart.js')
+require('vue-chartjs')
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 window.laravel_csrf = document.getElementsByName('csrf-token')[0].getAttribute('content');
