@@ -15,7 +15,7 @@ import nltk
 from nltk.corpus import stopwords
 import re
 import networkx
-
+from datetime import datetime, timedelta
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -36,11 +36,11 @@ auth.set_access_token(access_token, access_token_secret)
 api = tw.API(auth, wait_on_rate_limit=True)
 
 # search_term = "#climate+change -filter:retweets"
-
+yesterday = datetime.strftime(datetime.now() - timedelta(1), '%Y-%m-%d');
 search_term = \
-    '(disease OR illness OR ailment) -filter:retweets'
+    '(disease) -filter:retweets'
 tweets = tw.Cursor(api.search, q=search_term, lang='en',
-                   since='2019-11-01').items(1000)
+                   since=yesterday).items(1000)
 
 all_tweets = [tweet.text for tweet in tweets]
 
