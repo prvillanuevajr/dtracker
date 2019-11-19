@@ -24,10 +24,10 @@ sns.set_style('whitegrid')
 
 #
 
-consumer_key = 'gdjikdWc9J5e0pS8jmOtMhBnv'
-consumer_secret = 'JS85lWXG9yo6FW7q85jQAk2pmJZspLwnTtoixnkmlVe8h06QH0'
-access_token = '720269448976859136-pB9pzIzNh2bbN5y0XkZ7T5HE4ZXQ80a'
-access_token_secret = 'uIhtjxgxQBFoSM2lQC7gCw4cbqgorE3rKyIrX4617iyVJ'
+consumer_key = 'on_twitter'
+consumer_secret = 'on_twitter'
+access_token = 'on_twitter'
+access_token_secret = 'on_twitter'
 
 #
 
